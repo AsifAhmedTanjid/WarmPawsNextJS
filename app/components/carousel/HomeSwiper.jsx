@@ -26,7 +26,7 @@ const HomeSwiper = () => {
 
     
   return (
-    <div className="bg-[#f0f8ff]">
+    <div className="bg-[#f0f8ff] pt-3">
       <Swiper
            spaceBetween={30}
         centeredSlides={true}
@@ -39,7 +39,7 @@ const HomeSwiper = () => {
         }}
         navigation={true}
         modules={[Autoplay, Pagination,Navigation]}
-        className="mySwiper container rounded-2xl mt-3"
+        className="mySwiper container rounded-2xl pt-3"
       >
           <SwiperSlide>
             <div className="w-full h-64 md:h-72 lg:h-150 ">
