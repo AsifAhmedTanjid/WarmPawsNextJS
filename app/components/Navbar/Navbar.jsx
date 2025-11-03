@@ -8,6 +8,7 @@ import toast, { Toaster } from "react-hot-toast";
 import { ClimbingBoxLoader } from "react-spinners";
 import Link from "next/link";
 import { AuthContext } from "../context/AuthContext";
+import Image from "next/image";
 
 const Navbar = () => {
   const { user, signoutUserFunc, setUser,loading,setLoading} = useContext(AuthContext);
@@ -150,7 +151,7 @@ const Navbar = () => {
             </span>
           )} */}
                     
-            {/* <img src={user.photoURL} alt="" /> */}
+            <Image height={48} width={48} src={user.photoURL} alt="" />
           
         </div>
       </div>
