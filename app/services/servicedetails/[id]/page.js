@@ -17,19 +17,7 @@ export default function ServiceDetailsPage() {
   const [service, setService] = useState(null);
   const [formData, setFormData] = useState({ name: "", email: "" });
 
-  // --- Auth protection ---
-  useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, (u) => {
-      if (!u) {
-        router.push("/login"); // redirect if not logged in
-      } else {
-        setUser(u);
-      }
-    });
-    return () => unsubscribe();
-  }, [router]);
 
-  // --- Fetch service data ---
   useEffect(() => {
     fetch("/data/data.json")
       .then((res) => res.json())
@@ -51,7 +39,7 @@ export default function ServiceDetailsPage() {
   };
 
   if (loading) return <div>Loading...</div>;
-//   if (!service) return <NotFound />;
+
 
   return (
     <div className="min-h-screen bg-[#f0f8ff] py-10 px-4">
@@ -93,7 +81,7 @@ export default function ServiceDetailsPage() {
               className="input input-bordered w-full"
               required
             />
-            <button type="submit" className="w-full btn">
+            <button type="submit" className="w-full btn bg-linear-to-tr from-[#a8d8ff] via-[#6ec1ff] to-[#ffffff] text-gray-800 font-semibold ">
               Book Now
             </button>
           </form>
