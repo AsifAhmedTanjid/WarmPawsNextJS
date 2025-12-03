@@ -53,7 +53,7 @@ const Services = () => {
 
   return (
     <>
-      <Toaster position="top-center" reverseOrder={false} />
+      {/* <Toaster position="top-center" reverseOrder={false} /> */}
 
       <div className="bg-[#f0f8ff] min-h-screen py-10 px-4 ">
         <div className="container mx-auto">

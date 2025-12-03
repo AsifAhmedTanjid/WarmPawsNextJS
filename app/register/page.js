@@ -104,7 +104,7 @@ const router = useRouter();
 
   return (
     <div className="hero bg-base-200 min-h-screen">
-      <Toaster position="top-center" reverseOrder={false} />
+      {/* <Toaster position="top-center" reverseOrder={false} /> */}
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="text-center lg:text-left">
           <h1

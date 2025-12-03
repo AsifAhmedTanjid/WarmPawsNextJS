@@ -32,7 +32,7 @@ const Home = () => {
 
     return (
         <div>
-            <Toaster position="top-center" reverseOrder={false} />
+            {/* <Toaster position="top-center" reverseOrder={false} /> */}
             <HomeSwiper></HomeSwiper>
             {/* <WinterServices ></WinterServices> */}
             <TopWinterServices services={services}></TopWinterServices>

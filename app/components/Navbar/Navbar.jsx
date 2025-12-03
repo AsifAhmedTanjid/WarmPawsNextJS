@@ -54,12 +54,12 @@ const Navbar = () => {
   return (
     <div className="bg-[#0e4372] shadow-sm sticky top-0 z-50">
       <div className="navbar container mx-auto">
-        <Toaster
+        {/* <Toaster
           position="top-center"
           toastOptions={{
             style: { zIndex: 9999 },
           }}
-        />
+        /> */}
         <div className="navbar-start">
           <div className="dropdown z-10">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

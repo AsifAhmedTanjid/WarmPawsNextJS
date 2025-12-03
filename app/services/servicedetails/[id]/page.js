@@ -36,7 +36,7 @@ export default function ServiceDetailsPage() {
 
   return (
     <div className="min-h-screen bg-[#f0f8ff] py-10 px-4">
-      <Toaster position="top-center" />
+      {/* <Toaster position="top-center" /> */}
       <div className="container mx-auto bg-white shadow-lg rounded-2xl overflow-hidden">
         <Image
           height={600}

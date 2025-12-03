@@ -35,7 +35,7 @@ const router =useRouter();
 
   return (
     <div className="hero bg-base-200 min-h-screen">
-      <Toaster position="top-center" />
+      {/* <Toaster position="top-center" /> */}
       <div className="hero-content flex-col">
         <h1
           className="text-4xl font-bold bg-linear-to-tr from-[#a8d8ff] via-[#6ec1ff] to-[#ffffff]

@@ -2,7 +2,7 @@
 import React, { useContext, useEffect, useState } from "react";
 // import { AuthContext } from "../contexts/AuthContext";
 // import { updateProfile } from "firebase/auth";
-// import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 import { AuthContext } from "../components/context/AuthContext";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
@@ -18,7 +18,7 @@ const Profile = () => {
 
     useEffect(() => {
     if (!loading && !user) {
-      // toast.error("You must be logged in to access this page");
+      toast.error("You must be logged in to access this page");
       router.push("/login");
     }
   }, [user,router,loading]);
