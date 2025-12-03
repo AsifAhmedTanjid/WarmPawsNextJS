@@ -9,8 +9,10 @@ import { ClimbingBoxLoader } from "react-spinners";
 import Link from "next/link";
 import { AuthContext } from "../context/AuthContext";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+   const pathname = usePathname();
   const { user, signoutUserFunc, setUser,loading,setLoading} = useContext(AuthContext);
   const handleSignout = () => {
     signoutUserFunc()
@@ -24,26 +26,33 @@ const Navbar = () => {
       });
   };
   // console.log(user);
+    const links = [
+    { name: "Home", href: "/" },
+    { name: "Services", href: "/services" },
+    { name: "My Profile", href: "/profile" },
+    { name: "About Us", href: "/aboutus" },
+    { name: "Contact", href: "/contact" },
+  ];
 
-  const links = (
-    <>
-      <li className="mr-2">
-        <Link href="/">Home</Link>
-      </li>
+  // const links = (
+  //   <>
+  //     <li className="mr-2">
+  //       <Link href="/">Home</Link>
+  //     </li>
 
-      <li className="mr-2">
-        <Link href="/services">Services</Link>
-      </li>
+  //     <li className="mr-2">
+  //       <Link href="/services">Services</Link>
+  //     </li>
 
-      <li className="mr-2">
-        <Link href="/profile">My Profile</Link>
-      </li>
-    </>
-  );
+  //     <li className="mr-2">
+  //       <Link href="/profile">My Profile</Link>
+  //     </li>
+  //   </>
+  // );
 
 
   return (
-    <div className="bg-[#0e4372] shadow-sm ">
+    <div className="bg-[#0e4372] shadow-sm sticky top-0 z-50">
       <div className="navbar container mx-auto">
         <Toaster
           position="top-center"
@@ -74,7 +83,20 @@ const Navbar = () => {
               tabIndex="-1"
               className="menu menu-sm dropdown-content bg-[#0e4372] rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
-              {links}
+                            {links.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className={`hover:text-black transition ${
+                      pathname === link.href
+                        ? "text-blue-500 bg-white font-semibold"
+                        : "text-white"
+                    }`}
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -90,7 +112,23 @@ const Navbar = () => {
           {/* <h1 className="animate__animated animate__bounce animate__infinite">hello</h1> */}
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">{links}</ul>
+          <ul className="menu menu-horizontal px-1">      
+                {links.map((link) => (
+            <li key={link.href}>
+              <Link
+                href={link.href}
+                className={`hover:text-black transition ${
+                  pathname === link.href
+                    ? "text-blue-500 bg-white font-semibold"
+                    : "text-white"
+                }`}
+              >
+                {link.name}
+              </Link>
+            </li>
+          ))}
+
+          </ul>
         </div>
         
         {/* <div className="navbar-end ">
