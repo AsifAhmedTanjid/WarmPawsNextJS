@@ -12,26 +12,27 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const Navbar = () => {
-   const pathname = usePathname();
-  const { user, signoutUserFunc, setUser,loading,setLoading} = useContext(AuthContext);
+  const pathname = usePathname();
+  const { user, signoutUserFunc, setUser, loading, setLoading } =
+    useContext(AuthContext);
   const handleSignout = () => {
     signoutUserFunc()
       .then(() => {
         toast.success("Signout successful");
         setUser(null);
-        setLoading(false)
+        setLoading(false);
       })
       .catch((e) => {
         toast.error(e.message);
       });
   };
   // console.log(user);
-    const links = [
+  const links = [
     { name: "Home", href: "/" },
     { name: "Services", href: "/services" },
-    { name: "My Profile", href: "/profile" },
     { name: "About Us", href: "/aboutus" },
     { name: "Contact", href: "/contact" },
+    { name: "My Profile", href: "/profile" },
   ];
 
   // const links = (
@@ -49,7 +50,6 @@ const Navbar = () => {
   //     </li>
   //   </>
   // );
-
 
   return (
     <div className="bg-[#0e4372] shadow-sm sticky top-0 z-50">
@@ -83,20 +83,22 @@ const Navbar = () => {
               tabIndex="-1"
               className="menu menu-sm dropdown-content bg-[#0e4372] rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
-                            {links.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className={`hover:text-black transition ${
-                      pathname === link.href
-                        ? "text-blue-500 bg-white font-semibold"
-                        : "text-white"
-                    }`}
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
+              {links
+                .filter((link) => link.name !== "My Profile" || user)
+                .map((link) => (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      className={`hover:text-black transition ${
+                        pathname === link.href
+                          ? "text-blue-500 bg-white font-semibold"
+                          : "text-white"
+                      }`}
+                    >
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
             </ul>
           </div>
 
@@ -112,25 +114,26 @@ const Navbar = () => {
           {/* <h1 className="animate__animated animate__bounce animate__infinite">hello</h1> */}
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">      
-                {links.map((link) => (
-            <li key={link.href}>
-              <Link
-                href={link.href}
-                className={`hover:text-black transition ${
-                  pathname === link.href
-                    ? "text-blue-500 bg-white font-semibold"
-                    : "text-white"
-                }`}
-              >
-                {link.name}
-              </Link>
-            </li>
-          ))}
-
+          <ul className="menu menu-horizontal px-1">
+            {links
+              .filter((link) => link.name !== "My Profile" || user) 
+              .map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className={`hover:text-black transition ${
+                      pathname === link.href
+                        ? "text-blue-500 bg-white font-semibold"
+                        : "text-white"
+                    }`}
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
           </ul>
         </div>
-        
+
         {/* <div className="navbar-end ">
           {user ? (
             <div>
@@ -166,51 +169,47 @@ const Navbar = () => {
           )}
         </div> */}
 
-      <div className="navbar-end flex items-center h-12">
-  {loading ? (
-    <ClimbingBoxLoader 
-      color="#6ec1ff" 
-      size={5} 
-      cssOverride={{ display: 'inline-block' }}
-    />
-  ) : user ? (
-    
-    <div>
-      <div
-        className="avatar avatar-placeholder mr-3 tooltip tooltip-bottom"
-        data-tip={user.displayName}
-      >
-        <div className="bg-neutral text-neutral-content w-10 lg:w-12 rounded-full">
-          {/* {user.photoURL ? (
+        <div className="navbar-end flex items-center h-12">
+          {loading ? (
+            <ClimbingBoxLoader
+              color="#6ec1ff"
+              size={5}
+              cssOverride={{ display: "inline-block" }}
+            />
+          ) : user ? (
+            <div>
+              <div
+                className="avatar avatar-placeholder mr-3 tooltip tooltip-bottom"
+                data-tip={user.displayName}
+              >
+                <div className="bg-neutral text-neutral-content w-10 lg:w-12 rounded-full">
+                  {/* {user.photoURL ? (
             <img src={user.photoURL} alt="" />
           ) : (
             <span className="text-xl">
               {user.displayName ? user.displayName[0] : "X"}
             </span>
           )} */}
-                    
-            <Image height={48} width={48} src={user.photoURL} alt="" />
-          
-        </div>
-      </div>
-      <button
-        onClick={handleSignout}
-        className="bg-linear-to-tr from-[#ffb3b3] via-[#ff6666] to-[#ffffff] px-2 md:px-4 lg:px-6 rounded-box py-2 font-bold hover:cursor-pointer"
-      >
-        Log out
-      </button>
-    </div>
-  ) : (
-   
-    <Link
-      className="bg-linear-to-tr from-[#a8d8ff] via-[#6ec1ff] to-[#ffffff] px-2 md:px-4 lg:px-6 rounded-box py-2 font-bold"
-      href="/login"
-    >
-      Login
-    </Link>
-  )}
-</div>
 
+                  <Image height={48} width={48} src={user.photoURL} alt="" />
+                </div>
+              </div>
+              <button
+                onClick={handleSignout}
+                className="bg-linear-to-tr from-[#ffb3b3] via-[#ff6666] to-[#ffffff] px-2 md:px-4 lg:px-6 rounded-box py-2 font-bold hover:cursor-pointer"
+              >
+                Log out
+              </button>
+            </div>
+          ) : (
+            <Link
+              className="bg-linear-to-tr from-[#a8d8ff] via-[#6ec1ff] to-[#ffffff] px-2 md:px-4 lg:px-6 rounded-box py-2 font-bold"
+              href="/login"
+            >
+              Login
+            </Link>
+          )}
+        </div>
       </div>
     </div>
   );

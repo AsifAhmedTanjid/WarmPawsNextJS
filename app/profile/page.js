@@ -1,17 +1,26 @@
 "use client"
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 // import { AuthContext } from "../contexts/AuthContext";
 // import { updateProfile } from "firebase/auth";
 import toast, { Toaster } from "react-hot-toast";
 import { AuthContext } from "../components/context/AuthContext";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+// import { useRouter } from "next/router";
 // import avatar from "../assets/avatar.png";
 
 const Profile = () => {
   const { user,setUser,updateProfileFunc } = useContext(AuthContext);
+  const router = useRouter();
   const [isEditing, setIsEditing] = useState(false);
   const [name, setName] = useState(user?.displayName || "");
   const [photoURL, setPhotoURL] = useState(user?.photoURL || "");
+
+    useEffect(() => {
+    if (!user) {
+      router.push("/login");
+    }
+  }, [user,router]);
 
   const handleUpdateProfile = (e) => {
     e.preventDefault();
@@ -41,7 +50,7 @@ const Profile = () => {
 
   return (
     <div className="min-h-screen bg-base-200 flex justify-center items-center">
-      <Toaster position="top-center" reverseOrder={false} />
+      {/* <Toaster position="top-center" reverseOrder={false} /> */}
 
       <div className="card w-96 bg-base-100 shadow-2xl border border-gray-100">
         <div className="card-body items-center text-center">

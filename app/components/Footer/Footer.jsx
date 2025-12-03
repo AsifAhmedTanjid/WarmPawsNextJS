@@ -5,11 +5,19 @@ import React from 'react';
 const Footer = () => {
     return (
         <footer className="footer footer-horizontal footer-center bg-[#0e4372] text-white rounded p-10">
+             <Link
+            href="/"
+            className=" text-xl md:text-4xl font-extrabold 
+             bg-linear-to-tr from-[#a8d8ff] via-[#6ec1ff] to-[#ffffff]
+             bg-clip-text text-transparent 
+             drop-shadow-[0_0_10px_rgba(255,255,255,0.25)] tracking-wide animate__animated animate__pulse animate__infinite"
+          >
+            Warm Paws
+          </Link>
   <nav className="grid grid-flow-col gap-4">
-    <a className="link link-hover">About us</a>
-    <a className="link link-hover">Contact</a>
-    <a className="link link-hover">Jobs</a>
-    <a className="link link-hover">Press kit</a>
+    <Link className="link link-hover"  href="/aboutus">About us</Link>
+    <Link className="link link-hover" href="/contact">Contact</Link>
+  
   </nav>
   <nav>
     <div className="grid grid-flow-col gap-4">

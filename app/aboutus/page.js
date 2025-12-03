@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AboutUsPage() {
   return (
@@ -111,9 +112,9 @@ export default function AboutUsPage() {
           <p className="mb-6">
             Connect with us for winter pet care tips, promotions, and exclusive services.
           </p>
-          <button className="btn bg-white text-[#6ec1ff] font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition duration-300">
+          <Link href="https://www.facebook.com/nexgenpetcare"><button className="btn bg-white text-[#6ec1ff] font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition duration-300">
             Get in Touch
-          </button>
+          </button></Link>
         </div>
       </div>
     </div>
