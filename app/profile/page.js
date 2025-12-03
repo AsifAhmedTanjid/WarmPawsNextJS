@@ -2,7 +2,7 @@
 import React, { useContext, useEffect, useState } from "react";
 // import { AuthContext } from "../contexts/AuthContext";
 // import { updateProfile } from "firebase/auth";
-import toast, { Toaster } from "react-hot-toast";
+// import toast, { Toaster } from "react-hot-toast";
 import { AuthContext } from "../components/context/AuthContext";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
@@ -10,17 +10,18 @@ import { useRouter } from "next/navigation";
 // import avatar from "../assets/avatar.png";
 
 const Profile = () => {
-  const { user,setUser,updateProfileFunc } = useContext(AuthContext);
+  const { loading,user,setUser,updateProfileFunc } = useContext(AuthContext);
   const router = useRouter();
   const [isEditing, setIsEditing] = useState(false);
   const [name, setName] = useState(user?.displayName || "");
   const [photoURL, setPhotoURL] = useState(user?.photoURL || "");
 
     useEffect(() => {
-    if (!user) {
+    if (!loading && !user) {
+      // toast.error("You must be logged in to access this page");
       router.push("/login");
     }
-  }, [user,router]);
+  }, [user,router,loading]);
 
   const handleUpdateProfile = (e) => {
     e.preventDefault();
