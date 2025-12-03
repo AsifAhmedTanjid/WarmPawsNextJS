@@ -7,9 +7,17 @@
     "price": 25,
     "rating": 4.9,
     "slotsAvailable": 4,
-    "description": "Custom coat fitting and warm outfit options to keep your dog comfortable in the cold.",
-    "image": "https://i.ibb.co.com/9Ht71JMp/erik-mclean-Wq-Lop-Zh-Ehr4-unsplash-1.jpg",
-    "category": "Clothing"
+    "description": "Custom coat fitting for dogs.",
+    "longDescription": "Expert measurement, fabric advice, and warm coat fitting for small and medium dogs.",
+    "features": ["Custom measurements", "Thermal fabric options", "Water-resistant material", "Comfort-checked fitting"],
+    "benefits": ["Keeps pets warm", "Perfect winter protection", "Better comfort than regular coats"],
+    "duration": "45 minutes",
+    "location": "PawCare Studio, Sector 12",
+    "petTypes": ["Dogs", "Puppies"],
+    "serviceRules": ["Pet must be vaccinated", "Appointment required", "15 minutes late = auto cancellation"],
+    "reviews": [{"user": "Sara", "rating": 5, "comment": "Very helpful service!"}, {"user": "Mike", "rating": 4, "comment": "Great fitting, friendly staff."}],
+    "category": "Clothing",
+    "image": "https://i.ibb.co.com/9Ht71JMp/erik-mclean-Wq-Lop-Zh-Ehr4-unsplash-1.jpg"
   },
   {
     "serviceId": 2,
@@ -19,9 +27,17 @@
     "price": 30,
     "rating": 4.8,
     "slotsAvailable": 3,
-    "description": "Professional grooming with moisturizing paw balm and winter-safe shampoo to prevent dryness and cracking.",
-    "image": "https://i.ibb.co.com/Xxdfjh72/hayffield-l-ZVd-Zw2p08y4-unsplash.jpg",
-    "category": "Grooming"
+    "description": "Professional grooming with moisturizing paw balm and winter-safe shampoo.",
+    "longDescription": "Grooming session with paw balm, winter-safe shampoo, and nail trimming to prevent dryness and cracking.",
+    "features": ["Moisturizing paw balm", "Winter-safe shampoo", "Nail trimming", "Fur detangling"],
+    "benefits": ["Healthy skin", "Shiny coat", "Comfortable paws"],
+    "duration": "60 minutes",
+    "location": "CozyPets Grooming, Main Street",
+    "petTypes": ["Dogs", "Cats"],
+    "serviceRules": ["Pet must be clean", "Appointment required", "Late arrivals may be rescheduled"],
+    "reviews": [{"user": "Anna", "rating": 5, "comment": "My dog loved it!"}, {"user": "John", "rating": 4, "comment": "Very professional staff."}],
+    "category": "Grooming",
+    "image": "https://i.ibb.co.com/Xxdfjh72/hayffield-l-ZVd-Zw2p08y4-unsplash.jpg"
   },
   {
     "serviceId": 3,
@@ -31,9 +47,17 @@
     "price": 20,
     "rating": 4.7,
     "slotsAvailable": 5,
-    "description": "Rent cozy heated beds to keep your pet snug through the winter nights.",
-    "image": "https://i.ibb.co.com/p6Zx12r9/matthew-manuel-Jz-Xb-WRfh-g-Q-unsplash.jpg",
-    "category": "Comfort"
+    "description": "Rent cozy heated beds to keep your pet snug through winter nights.",
+    "longDescription": "Rent premium heated beds suitable for small and medium pets, keeping them warm and comfortable all night.",
+    "features": ["Electric heated bed", "Removable covers", "Soft padding", "Safe temperature control"],
+    "benefits": ["Warm sleep", "Reduced joint stiffness", "Cozy for pets with thin fur"],
+    "duration": "Per night rental",
+    "location": "WarmTails Hub, Downtown",
+    "petTypes": ["Dogs", "Cats", "Rabbits"],
+    "serviceRules": ["Pet must be supervised", "Return bed clean", "Booking required"],
+    "reviews": [{"user": "Lucy", "rating": 5, "comment": "My cat loved it!"}, {"user": "Tom", "rating": 4, "comment": "Very convenient service."}],
+    "category": "Comfort",
+    "image": "https://i.ibb.co.com/p6Zx12r9/matthew-manuel-Jz-Xb-WRfh-g-Q-unsplash.jpg"
   },
   {
     "serviceId": 4,
@@ -43,9 +67,17 @@
     "price": 35,
     "rating": 5.0,
     "slotsAvailable": 6,
-    "description": "Tailored winter meal plan to boost your pet's energy and immunity during cold months.",
-    "image": "https://i.ibb.co.com/xS69k4bH/tommy-texter-0-M5s-DRZObl4-unsplash.jpg",
-    "category": "Nutrition"
+    "description": "Tailored winter meal plan to boost your pet's energy.",
+    "longDescription": "Customized winter nutrition plan with high-energy meals, supplements, and immune-boosting ingredients.",
+    "features": ["Custom meal plan", "Winter supplements", "High-energy ingredients", "Balanced nutrition"],
+    "benefits": ["Better immunity", "Energy boost", "Maintains healthy weight"],
+    "duration": "1 week consultation",
+    "location": "FurEats Nutrition, Sector 5",
+    "petTypes": ["Dogs", "Cats"],
+    "serviceRules": ["Consultation required", "Follow plan strictly", "Recheck after 1 week"],
+    "reviews": [{"user": "Emma", "rating": 5, "comment": "My pet loves the meals!"}, {"user": "James", "rating": 4, "comment": "Great nutrition advice."}],
+    "category": "Nutrition",
+    "image": "https://i.ibb.co.com/xS69k4bH/tommy-texter-0-M5s-DRZObl4-unsplash.jpg"
   },
   {
     "serviceId": 5,
@@ -55,9 +87,17 @@
     "price": 40,
     "rating": 4.9,
     "slotsAvailable": 2,
-    "description": "Learn safe walking practices and protective gear tips for pets in snowy or icy conditions.",
-    "image": "https://i.ibb.co.com/j9rWTMLk/dog-walking-1.jpg",
-    "category": "Training"
+    "description": "Learn safe walking practices for pets in snow.",
+    "longDescription": "Training session on safe outdoor walking, protective gear, and paw care during icy conditions.",
+    "features": ["Protective boots", "Walking safety tips", "Snow gait training", "Warm clothing guidance"],
+    "benefits": ["Avoid frostbite", "Safe outdoor exercise", "Better mobility in snow"],
+    "duration": "1 hour",
+    "location": "PawSteps Training, Park Avenue",
+    "petTypes": ["Dogs", "Puppies"],
+    "serviceRules": ["Appointment required", "Pet must be vaccinated", "Follow trainer instructions"],
+    "reviews": [{"user": "Olivia", "rating": 5, "comment": "Trainer was excellent!"}, {"user": "Noah", "rating": 4, "comment": "Very informative session."}],
+    "category": "Training",
+    "image": "https://i.ibb.co.com/j9rWTMLk/dog-walking-1.jpg"
   },
   {
     "serviceId": 6,
@@ -67,9 +107,17 @@
     "price": 50,
     "rating": 4.8,
     "slotsAvailable": 3,
-    "description": "Quick-access vet checkup package for common winter-related health concerns like frostbite or dry skin.",
-    "image": "https://i.ibb.co.com/F4k1hHfb/working-at-a-247-emergency-vet-winter-haven-fl.jpg",
-    "category": "Healthcare"
+    "description": "Quick-access vet checkup for winter health issues.",
+    "longDescription": "Emergency checkup including frostbite evaluation, cold-related skin care, and hydration assessment.",
+    "features": ["Frostbite check", "Skin hydration", "Cold injury treatment", "Quick consultation"],
+    "benefits": ["Health protection", "Immediate care", "Winter-specific advice"],
+    "duration": "30 minutes",
+    "location": "FrostCare Veterinary, Downtown",
+    "petTypes": ["Dogs", "Cats"],
+    "serviceRules": ["Appointment recommended", "Pet must be calm", "Bring vaccination records"],
+    "reviews": [{"user": "Liam", "rating": 5, "comment": "Saved my dog's paw!"}, {"user": "Sophia", "rating": 4, "comment": "Quick and effective service."}],
+    "category": "Healthcare",
+    "image": "https://i.ibb.co.com/F4k1hHfb/working-at-a-247-emergency-vet-winter-haven-fl.jpg"
   },
   {
     "serviceId": 7,
@@ -79,10 +127,19 @@
     "price": 45,
     "rating": 4.9,
     "slotsAvailable": 4,
-    "description": "Capture adorable winter moments of your pets with professional photographers in a snowy theme setup.",
-    "image": "https://i.ibb.co.com/d4s8Vzs3/Screenshot-2025-10-25-115127.png",
-    "category": "Photography"
+    "description": "Capture adorable winter moments of your pets.",
+    "longDescription": "Professional photography session in a snowy-themed setup with props and pet-friendly arrangements.",
+    "features": ["Snow-themed setup", "Props included", "Professional editing", "Outdoor and indoor options"],
+    "benefits": ["Memorable photos", "Pet-friendly experience", "High-quality prints"],
+    "duration": "1 hour",
+    "location": "SnowLens Studio, Midtown",
+    "petTypes": ["Dogs", "Cats"],
+    "serviceRules": ["Appointment required", "Pets should be comfortable with strangers", "Bring accessories if desired"],
+    "reviews": [{"user": "Ella", "rating": 5, "comment": "Stunning photos!"}, {"user": "Jack", "rating": 4, "comment": "Friendly staff and great setup."}],
+    "category": "Photography",
+    "image": "https://i.ibb.co.com/d4s8Vzs3/Screenshot-2025-10-25-115127.png"
   },
+  
   {
     "serviceId": 8,
     "serviceName": "Winter Spa & Massage for Pets",
@@ -92,8 +149,16 @@
     "rating": 4.9,
     "slotsAvailable": 3,
     "description": "Warm oil massage and spa bath to relieve muscle stiffness during cold weather.",
-    "image": "https://i.ibb.co.com/kgrKpdXq/Screenshot-2025-10-25-115334.png",
-    "category": "Wellness"
+    "longDescription": "Relaxing spa session with warm oils and massage to improve circulation and relieve muscle stiffness for pets.",
+    "features": ["Warm oil massage", "Gentle spa bath", "Muscle relaxation techniques", "Stress relief"],
+    "benefits": ["Improved circulation", "Relieves stiffness", "Relaxed pets"],
+    "duration": "60 minutes",
+    "location": "PawRelax Wellness, Downtown",
+    "petTypes": ["Dogs", "Cats"],
+    "serviceRules": ["Appointment required", "Pets should be calm", "Avoid feeding 2 hours before session"],
+    "reviews": [{"user": "Mia", "rating": 5, "comment": "My dog felt so relaxed!"}, {"user": "Ethan", "rating": 4, "comment": "Excellent massage service."}],
+    "category": "Wellness",
+    "image": "https://i.ibb.co.com/kgrKpdXq/Screenshot-2025-10-25-115334.png"
   },
   {
     "serviceId": 9,
@@ -104,8 +169,16 @@
     "rating": 4.6,
     "slotsAvailable": 5,
     "description": "Create a personalized thermal blanket for your pet with soft, warm materials and name embroidery.",
-    "image": "https://i.ibb.co.com/21Z94dCb/Screenshot-2025-10-25-115626.png",
-    "category": "Comfort"
+    "longDescription": "Customized thermal blankets with soft materials, warm padding, and optional name embroidery to keep pets cozy.",
+    "features": ["Soft materials", "Personalized embroidery", "Warm padding", "Machine washable"],
+    "benefits": ["Keeps pets warm", "Personalized comfort", "Easy maintenance"],
+    "duration": "3–5 days production",
+    "location": "PetComfort Designs, Sector 7",
+    "petTypes": ["Dogs", "Cats", "Small pets"],
+    "serviceRules": ["Order in advance", "Provide pet dimensions", "No returns for personalized items"],
+    "reviews": [{"user": "Sophia", "rating": 5, "comment": "Blanket is so soft and warm!"}, {"user": "Liam", "rating": 4, "comment": "Loved the embroidery."}],
+    "category": "Comfort",
+    "image": "https://i.ibb.co.com/21Z94dCb/Screenshot-2025-10-25-115626.png"
   },
   {
     "serviceId": 10,
@@ -116,8 +189,16 @@
     "rating": 4.8,
     "slotsAvailable": 6,
     "description": "Fitting and selling anti-slip, waterproof snow boots to keep paws safe and dry.",
-    "image": "https://i.ibb.co.com/qYkr5NMH/61-OFa-OS2-ESL-AC-SX679.jpg",
-    "category": "Clothing"
+    "longDescription": "Professional fitting and sale of winter boots for pets to prevent slipping and protect paws from cold and wet conditions.",
+    "features": ["Waterproof material", "Anti-slip soles", "Multiple sizes", "Adjustable straps"],
+    "benefits": ["Protects paws", "Prevents slipping", "Comfortable for winter walks"],
+    "duration": "30 minutes fitting",
+    "location": "PawGear Store, Main Street",
+    "petTypes": ["Dogs", "Puppies"],
+    "serviceRules": ["Appointment recommended", "Measure paws before fitting", "Boots are non-refundable"],
+    "reviews": [{"user": "Olivia", "rating": 5, "comment": "Boots fit perfectly!"}, {"user": "Noah", "rating": 4, "comment": "Great quality."}],
+    "category": "Clothing",
+    "image": "https://i.ibb.co.com/qYkr5NMH/61-OFa-OS2-ESL-AC-SX679.jpg"
   },
   {
     "serviceId": 11,
@@ -128,8 +209,16 @@
     "rating": 4.7,
     "slotsAvailable": 5,
     "description": "Ensure your pet maintains a healthy weight during winter with expert nutritional consultation.",
-    "image": "https://i.ibb.co.com/qM2G1LcS/mecs-1fe2cc502395a54b-2024-09-safe-rate-354x280.jpg",
-    "category": "Nutrition"
+    "longDescription": "Comprehensive consultation to check pet weight and provide diet recommendations tailored to winter activity levels.",
+    "features": ["Weight measurement", "Diet assessment", "Winter nutrition advice", "Follow-up guidance"],
+    "benefits": ["Healthy weight", "Better energy levels", "Personalized nutrition plan"],
+    "duration": "45 minutes",
+    "location": "HealthyPaws Nutrition, Sector 4",
+    "petTypes": ["Dogs", "Cats"],
+    "serviceRules": ["Appointment required", "Bring previous diet records", "Follow-up optional"],
+    "reviews": [{"user": "Emma", "rating": 5, "comment": "Very helpful advice!"}, {"user": "James", "rating": 4, "comment": "Good consultation."}],
+    "category": "Nutrition",
+    "image": "https://i.ibb.co.com/qM2G1LcS/mecs-1fe2cc502395a54b-2024-09-safe-rate-354x280.jpg"
   },
   {
     "serviceId": 12,
@@ -140,8 +229,16 @@
     "rating": 4.8,
     "slotsAvailable": 7,
     "description": "Safe, warm transport for your pets to vet or grooming appointments during winter.",
-    "image": "https://i.ibb.co.com/4ZXCNYzH/pet-taxi-r0c092iwossz3ywa7hs094q5o4c38etaxpbnmij3xo.webp",
-    "category": "Transport"
+    "longDescription": "Professional winter pet taxi with heated vehicles and experienced handlers to safely transport pets to appointments.",
+    "features": ["Heated vehicles", "Professional handlers", "Pet safety restraints", "Flexible scheduling"],
+    "benefits": ["Safe transport", "Warmth during travel", "Stress-free rides"],
+    "duration": "Variable depending on distance",
+    "location": "SnowRide Pets, City Center",
+    "petTypes": ["Dogs", "Cats"],
+    "serviceRules": ["Appointment required", "Pet must be calm", "Vaccination required"],
+    "reviews": [{"user": "Ava", "rating": 5, "comment": "Reliable service!"}, {"user": "Mason", "rating": 4, "comment": "Very convenient."}],
+    "category": "Transport",
+    "image": "https://i.ibb.co.com/4ZXCNYzH/pet-taxi-r0c092iwossz3ywa7hs094q5o4c38etaxpbnmij3xo.webp"
   },
   {
     "serviceId": 13,
@@ -152,8 +249,16 @@
     "rating": 4.9,
     "slotsAvailable": 4,
     "description": "Learn how to identify and prevent frostbite in pets during extremely cold conditions.",
-    "image": "https://i.ibb.co.com/3yMKKK3t/winter-dog.webp",
-    "category": "Training"
+    "longDescription": "Interactive workshop on recognizing early frostbite signs and protective measures for pets in winter.",
+    "features": ["Frostbite awareness", "Protective gear guidance", "Winter safety tips", "Hands-on demonstration"],
+    "benefits": ["Prevents frostbite", "Increases safety knowledge", "Better pet care"],
+    "duration": "2 hours",
+    "location": "ColdCare Clinic, Downtown",
+    "petTypes": ["Dogs", "Cats", "Puppies"],
+    "serviceRules": ["Registration required", "Bring pets optional", "Follow instructor guidance"],
+    "reviews": [{"user": "Isabella", "rating": 5, "comment": "Very informative workshop!"}, {"user": "Lucas", "rating": 4, "comment": "Learned a lot."}],
+    "category": "Training",
+    "image": "https://i.ibb.co.com/3yMKKK3t/winter-dog.webp"
   },
   {
     "serviceId": 14,
@@ -164,8 +269,16 @@
     "rating": 4.9,
     "slotsAvailable": 2,
     "description": "Add insulation and heating pads to your pet's cabin for maximum winter warmth.",
-    "image": "https://i.ibb.co.com/wZLyjJCQ/71-M8-Lgocay-L-AC-UF1000-1000-QL80.jpg",
-    "category": "Home Improvement"
+    "longDescription": "Installation of insulation and heated pads in pet cabins to ensure warmth and comfort during harsh winter months.",
+    "features": ["Insulation panels", "Heated pads", "Custom sizing", "Weatherproof materials"],
+    "benefits": ["Warmth", "Energy efficiency", "Pet comfort"],
+    "duration": "1–2 days installation",
+    "location": "WarmNest Builders, Sector 10",
+    "petTypes": ["Dogs", "Cats"],
+    "serviceRules": ["Appointment required", "Cabin size must be measured", "Follow maintenance instructions"],
+    "reviews": [{"user": "Charlotte", "rating": 5, "comment": "Cabin is super warm!"}, {"user": "Henry", "rating": 4, "comment": "Well installed."}],
+    "category": "Home Improvement",
+    "image": "https://i.ibb.co.com/wZLyjJCQ/71-M8-Lgocay-L-AC-UF1000-1000-QL80.jpg"
   },
   {
     "serviceId": 15,
@@ -176,8 +289,16 @@
     "rating": 4.8,
     "slotsAvailable": 5,
     "description": "Guided outdoor walks with winter jackets and protective boots for dogs.",
-    "image": "https://i.ibb.co.com/jvvrJvxX/cold-dog-blog.jpg",
-    "category": "Exercise"
+    "longDescription": "Supervised walks for dogs during winter with protective jackets, boots, and safety guidance for cold weather conditions.",
+    "features": ["Winter jackets", "Protective boots", "Guided routes", "Safety supervision"],
+    "benefits": ["Safe outdoor exercise", "Protection from cold", "Better mobility"],
+    "duration": "1 hour per walk",
+    "location": "FurrySteps Club, City Park",
+    "petTypes": ["Dogs", "Puppies"],
+    "serviceRules": ["Appointment required", "Pets should be healthy", "Follow walker instructions"],
+    "reviews": [{"user": "Amelia", "rating": 5, "comment": "My dog enjoyed it!"}, {"user": "Ethan", "rating": 4, "comment": "Good winter walk service."}],
+    "category": "Exercise",
+    "image": "https://i.ibb.co.com/jvvrJvxX/cold-dog-blog.jpg"
   },
   {
     "serviceId": 16,
@@ -188,8 +309,16 @@
     "rating": 5.0,
     "slotsAvailable": 3,
     "description": "Gentle heat-based therapy session to relax muscles and improve blood flow in cold weather.",
-    "image": "https://i.ibb.co.com/XZrn1QRd/1r-Sya-Ov-Cc-1.jpg",
-    "category": "Wellness"
+    "longDescription": "Heat-based therapy to relax muscles, improve circulation, and relieve winter stiffness for pets.",
+    "features": ["Heat therapy", "Muscle relaxation", "Circulation improvement", "Stress relief"],
+    "benefits": ["Relaxed muscles", "Improved blood flow", "Better overall wellness"],
+    "duration": "45 minutes",
+    "location": "RelaxPaws Spa, Downtown",
+    "petTypes": ["Dogs", "Cats"],
+    "serviceRules": ["Appointment required", "Pets must be calm", "Avoid feeding 1 hour before session"],
+    "reviews": [{"user": "Harper", "rating": 5, "comment": "Excellent therapy!"}, {"user": "Logan", "rating": 4, "comment": "Very beneficial."}],
+    "category": "Wellness",
+    "image": "https://i.ibb.co.com/XZrn1QRd/1r-Sya-Ov-Cc-1.jpg"
   },
   {
     "serviceId": 17,
@@ -200,8 +329,16 @@
     "rating": 5,
     "slotsAvailable": 8,
     "description": "Join our special winter adoption drive and find a loving home for pets in need.",
-    "image": "https://i.ibb.co.com/4Z4rR0fC/Winter-Camp-Instagram.jpg",
-    "category": "Community"
+    "longDescription": "Adoption camp offering a safe environment to meet and adopt pets during the winter season, with guidance and support.",
+    "features": ["Pet adoption", "Winter camp setup", "Meet & greet pets", "Adoption guidance"],
+    "benefits": ["Find pets a home", "Safe environment", "Community support"],
+    "duration": "Full day event",
+    "location": "KindHearts Shelter, Sector 8",
+    "petTypes": ["Dogs", "Cats", "Rabbits"],
+    "serviceRules": ["Follow shelter rules", "Pre-registration required", "Bring ID"],
+    "reviews": [{"user": "Scarlett", "rating": 5, "comment": "Adopted a lovely dog!"}, {"user": "Mason", "rating": 5, "comment": "Amazing event."}],
+    "category": "Community",
+    "image": "https://i.ibb.co.com/4Z4rR0fC/Winter-Camp-Instagram.jpg"
   },
   {
     "serviceId": 18,
@@ -212,8 +349,16 @@
     "rating": 4.7,
     "slotsAvailable": 10,
     "description": "Engage your pets in safe indoor exercises to keep them active during the winter season.",
-    "image": "https://i.ibb.co.com/pjryH1vb/Agility-Kit-Action2.jpg",
-    "category": "Exercise"
+    "longDescription": "Indoor fitness program for pets including agility, light exercises, and activity tracking to maintain health during winter.",
+    "features": ["Indoor exercises", "Agility training", "Activity tracking", "Pet-friendly sessions"],
+    "benefits": ["Maintain fitness", "Avoid winter weight gain", "Active pets"],
+    "duration": "1 hour per session",
+    "location": "ActiveTails Club, Indoor Arena",
+    "petTypes": ["Dogs", "Cats"],
+    "serviceRules": ["Sign-up required", "Healthy pets only", "Follow trainer guidance"],
+    "reviews": [{"user": "Evelyn", "rating": 5, "comment": "Fun and energetic!"}, {"user": "Jackson", "rating": 4, "comment": "Good fitness challenge."}],
+    "category": "Exercise",
+    "image": "https://i.ibb.co.com/pjryH1vb/Agility-Kit-Action2.jpg"
   },
   {
     "serviceId": 19,
@@ -224,8 +369,16 @@
     "rating": 4.6,
     "slotsAvailable": 5,
     "description": "Professional cleaning for pet coats, sweaters, and blankets to keep them fresh and warm.",
-    "image": "https://i.ibb.co.com/9kXX3WGC/Screenshot-2025-10-25-121818.png",
-    "category": "Cleaning"
+    "longDescription": "Careful cleaning of winter garments for pets including washing, drying, and stain removal to ensure warmth and hygiene.",
+    "features": ["Washing service", "Drying & ironing", "Stain removal", "Pet-friendly detergents"],
+    "benefits": ["Clean coats", "Comfortable pets", "Hygienic materials"],
+    "duration": "2 hours per service",
+    "location": "FluffClean Laundry, Downtown",
+    "petTypes": ["Dogs", "Cats"],
+    "serviceRules": ["Drop-off required", "Appointment recommended", "No self-service allowed"],
+    "reviews": [{"user": "Abigail", "rating": 5, "comment": "Coats came out perfect!"}, {"user": "Alexander", "rating": 4, "comment": "Very professional."}],
+    "category": "Cleaning",
+    "image": "https://i.ibb.co.com/9kXX3WGC/Screenshot-2025-10-25-121818.png"
   },
   {
     "serviceId": 20,
@@ -236,7 +389,16 @@
     "rating": 5.0,
     "slotsAvailable": 4,
     "description": "Enjoy an outdoor winter picnic with your pets, including blankets, treats, and a warm shelter setup.",
-    "image": "https://i.ibb.co.com/WpNW918F/pet-friendly-picnic-jpg.png",
-    "category": "Recreation"
+    "longDescription": "Organized outdoor picnic event for pet owners during winter, with warm seating, pet treats, and shelter from cold weather.",
+    "features": ["Warm blankets", "Pet treats included", "Sheltered seating", "Group activities"],
+    "benefits": ["Fun for pets and owners", "Safe environment", "Warm and cozy setup"],
+    "duration": "3–4 hours",
+    "location": "ChillBuddies Events, Central Park",
+    "petTypes": ["Dogs", "Cats", "Small pets"],
+    "serviceRules": ["Pre-booking required", "Pets must be vaccinated", "Follow event guidelines"],
+    "reviews": [{"user": "Emily", "rating": 5, "comment": "Wonderful picnic!"}, {"user": "Daniel", "rating": 5, "comment": "My pets had so much fun."}],
+    "category": "Recreation",
+    "image": "https://i.ibb.co.com/WpNW918F/pet-friendly-picnic-jpg.png"
   }
+ 
 ]

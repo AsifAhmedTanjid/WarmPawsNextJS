@@ -36,6 +36,9 @@ const WinterServicesCard = ({ service }) => {
           <div>
             <p className="flex items-center gap-1 font-semibold "><IoIosStar color="gold"/> <span className="text-[#6ec1ff]">{service.rating} </span> <span>| ${service.price}</span>  </p>
           </div>
+          <div>
+            <p>{service.description}<Link href={`/services/servicedetails/${service.serviceId}`}><span className="font-semibold italic text-blue-500 hover:cursor-pointer">...See more</span></Link></p>
+          </div>
         </div>
 
      
