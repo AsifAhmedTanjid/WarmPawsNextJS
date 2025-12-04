@@ -32,6 +32,7 @@ const Navbar = () => {
     { name: "Services", href: "/services" },
     { name: "About Us", href: "/aboutus" },
     { name: "Contact", href: "/contact" },
+    { name: "Pet Safety Guidelines", href: "/pet-safety" },
     { name: "My Profile", href: "/profile" },
   ];
 

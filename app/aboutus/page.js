@@ -83,9 +83,9 @@ export default function AboutUsPage() {
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { name: "Asif Ahmed", role: "Founder & CEO", image: "https://i.ibb.co.com/zT6VJwBp/1750676584597.jpg" },
+              { name: "Asif Ahmed", role: "Founder & CEO", image: "https://i.ibb.co.com/zVTgPJC0/Screenshot-2025-10-25-124246.png" },
               { name: "Jhankar Mahbub", role: "Head Veterinarian", image: "https://i.ibb.co.com/nMN9rHXt/FB-IMG-1734106780258-1024x1024-jpg-bv-resized-mobile-jpg-bv.webp" },
-              { name: "Mike Lee", role: "Pet Grooming Specialist", image: "https://i.ibb.co.com/LdH46WKY/Screenshot-2025-10-25-124736.png" }
+              { name: "Azizul Islam Milton", role: "Pet Grooming Specialist", image: "https://i.ibb.co.com/LdH46WKY/Screenshot-2025-10-25-124736.png" }
             ].map((member, idx) => (
               <div key={idx} className="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition duration-300">
                 <Image
@@ -93,7 +93,7 @@ export default function AboutUsPage() {
                   alt={member.name}
                   width={150}
                   height={150}
-                  className="rounded-full mx-auto mb-4 object-cover"
+                  className="rounded-full mx-auto mb-4 object-cover w-32 h-32"
                 />
                 <h3 className="text-xl lg:text-2xl font-extrabold text-transparent bg-clip-text bg-linear-to-tr from-[#a8d8ff] via-[#6ec1ff] to-[#ffffff] drop-shadow-[0_0_10px_rgba(0,0,0,0.15)]">
                   {member.name}
